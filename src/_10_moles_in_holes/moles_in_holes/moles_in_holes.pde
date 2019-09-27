@@ -1,8 +1,11 @@
 void draw() {
 
 /* Use the method below to put moles in the holes. */
-
-
+  drawMole(70,120);
+  drawMole(300,60);
+  drawMole(297,350);
+  drawMole(200,200);
+  
 }
 
 void drawMole(int moleX, int moleY) {

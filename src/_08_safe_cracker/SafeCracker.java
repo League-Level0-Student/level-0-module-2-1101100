@@ -16,16 +16,19 @@ import javax.swing.JApplet;
 import javax.swing.JOptionPane;
 
 public class SafeCracker {
-
+	
 	public static void main(String[] args) {
 		/*
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */
-		
 
+		for(int i = 0; i <100; i++) {
+		int ran = new Random().nextInt(100);
+		tryCode(9999999 - ran);
+		}
 	}
-
+	
 	static void tryCode(int guess) {
 		System.out.println("trying " + guess);
 
@@ -36,6 +39,7 @@ public class SafeCracker {
 			playTheSoundOfSuccess();
 			System.exit(0);
 		}
+
 	}
 
 	private static void playTheSoundOfSuccess() {

@@ -13,13 +13,23 @@ public class Validation {
 		Random randomMaker = new Random();
 		
 		int randomNumber = randomMaker.nextInt(5);
-		
-		System.out.println(randomNumber);
 
 		// 1. Use each value of randomNumber to give the user a random compliment.
-
-		// 2. Repeat all the code above 10 times
 		
+		for (int i = 0; i < 10; i++) {
+		if (randomNumber == 0) {
+			System.out.println("[compliment 1]");
+		} else if (randomNumber == 1) {
+			System.out.println("[compliment 2]");
+		} else if (randomNumber == 2) {
+			System.out.println("[compliment 3]");
+		} else if (randomNumber == 3) {
+			System.out.println("[compliment 4]");
+		} else if (randomNumber == 4) {
+			System.out.println("[compliment 5]");
+		}
+		// 2. Repeat all the code above 10 times
+		}
 		// 3. Find someone to test out your program. They will like it :)
 	}
 }
