@@ -12,14 +12,33 @@ public class SoundtrackToLife {
 
 		// 1. Adjust this pop-up to find out what mood the user is in.
 		int userMood = JOptionPane.showOptionDialog(null, "The question", "Pop-up Title", 0,
-				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Mood1", "Mood2", "Mood3" }, null);
+				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Stressed", "happy", "sad", "angry" }, null);
 		
 		// 2. Their answer is stored in the userMood variable. Print it out.
-
+		JOptionPane.showMessageDialog(null, userMood);
 		// 3. If they are in a stressed mood, use the playVideo method to play a calming song from YouTube.
+		if (userMood == 0) {
+			
+			playVideo("https://www.youtube.com/watch?v=9Deg7VrpHbM");
+			
+		}
+		if (userMood == 1) {
+			
+			playVideo("http://bit.ly/video-for-happy");
+			
+		}
+		if (userMood == 2) {
+			
+			playVideo("http://bit.ly/video-for-sad");
+			
+		}
+		if (userMood == 3) {
+			
+			playVideo("http://bit.ly/video-for-angry");
+			
+		}
 		
-
-		
+	
 		// 4. Play different songs for other moods.
 
 /**
